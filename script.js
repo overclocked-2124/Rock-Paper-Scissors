@@ -1,13 +1,23 @@
 console.log("Rock Paper Scissors");
 let score=0;
-let i =5;
+let i =10;
 
 function getComputerChoice(){
     return(Math.random());
 }
 
 function getHumanChoice(){
-    return(prompt("Please input your choice (rock | paper| scissors):"));
+    function playRock() {
+        option="rock";
+    }
+    function playPaper() {
+        option="paper";
+    }
+    function playScissors() {
+        option="scissors";
+    }
+
+    return(option);
 } 
 
 function playRound(humanChoice,computerChoice){
@@ -69,11 +79,5 @@ function playRound(humanChoice,computerChoice){
             console.log("Score: "+score);
         }
     }
-}
-
-while(i--){
-    let computerSelection = getComputerChoice();
-    let humanSelection = getHumanChoice();
-    playRound(humanSelection,computerSelection);
 }
 
