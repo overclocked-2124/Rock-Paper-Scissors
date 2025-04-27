@@ -11,12 +11,21 @@
   <div class="game-container">
     <h1>Rock Paper Scissors</h1>
     <div class="scoreboard">
-      <span id="player-score">0</span> : <span id="computer-score">0</span>
+      <div class="score">
+        <span class="label">Player</span>
+        <span id="player-score" class="score-value">0</span>
+      </div>
+      <span class="separator">:</span>
+      <div class="score">
+        <span class="label">Computer</span>
+        <span id="computer-score" class="score-value">0</span>
+      </div>
     </div>
     <div class="choices">
       <button class="choice" id="buttonPaper">Paper</button>
       <button class="choice" id="buttonScissors">Scissors</button>
       <button class="choice" id="buttonRock">Rock</button>
+    </div>
   </div>
 </body>
 </html>
